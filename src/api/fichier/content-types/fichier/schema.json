@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fichiers",
+  "info": {
+    "singularName": "fichier",
+    "pluralName": "fichiers",
+    "displayName": "Fichier"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "information": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::information.information",
+      "inversedBy": "fichiers"
+    }
+  }
+}

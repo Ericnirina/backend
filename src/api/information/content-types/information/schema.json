@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "informations",
+  "info": {
+    "singularName": "information",
+    "pluralName": "informations",
+    "displayName": "Information",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomPartie": {
+      "type": "text"
+    },
+    "nomClient": {
+      "type": "string"
+    },
+    "nomPartieAdverse": {
+      "type": "string"
+    },
+    "dateProchainAudiance": {
+      "type": "date"
+    },
+    "juridiction": {
+      "type": "enumeration",
+      "enum": [
+        "JEX civil",
+        "JEX commercial",
+        "Référé TPI",
+        "Référé CA",
+        "Référé TC",
+        "Référé CAC",
+        "Premier Président de CA",
+        "Juge des Requêtes TPI",
+        "Juge des Requêtes TC",
+        "Juge cadial",
+        "Procureur",
+        "Juge d’Instruction",
+        "Chambre d’accusation",
+        "Tribunal de Première Instance",
+        "Tribunal de Commerce",
+        "Tribunal de Travail",
+        "Tribunal Administratif",
+        "Cour d’Arbitrage",
+        "Juge des Enfants",
+        "Tribunal Correctionnel",
+        "Cour d’Assise",
+        "Juridiction d’Exception",
+        "Cour d’Appel de droit commun",
+        "Cour d’Appel Commercial",
+        "Cour Administrative d’Appel",
+        "Cour Suprême",
+        "Haut Conseil de la Magistrature",
+        "Conseil de Discipline du Barreau",
+        "Conseil de Discipline Professionnelle",
+        "Inspection du Travail",
+        "Autre"
+      ]
+    },
+    "etatProcedure": {
+      "type": "enumeration",
+      "enum": [
+        "Attente de la convocation",
+        "Attente du premier appel de cause",
+        "Attente des écritures de la partie adverse",
+        "Attente de transmission de pièces de la partie adverse",
+        "Écriture à produire avant la prochaine audience",
+        "Pièces à produire avant la prochaine audience",
+        "Affaire mise en délibérée",
+        "Affaire clôturée – gain de cause",
+        "Affaire clôturée – perte de la cause – attente d’introduction de voies de recours",
+        "Attente d’enrôlement de l’affaire",
+        "Écriture à soumettre à la juridiction",
+        "Proposition d’accord amiable à soumettre à l’autre partie",
+        "Réponse à Proposition d’accord amiable à émettre",
+        "Attente de la rédaction de la décision",
+        "Décision transmis à l’huissier pour exécution",
+        "Décision remis au client",
+        "Déportation de l’affaire, dossier remis au client",
+        "Désistement à produire",
+        "Protocole transactionnelle à faire signer",
+        "Attente des instructions du client",
+        "Voies de recours à introduire"
+      ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "information"
+    },
+    "fichiers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::fichier.fichier",
+      "mappedBy": "information"
+    },
+    "numeroDossier": {
+      "type": "biginteger"
+    }
+  }
+}

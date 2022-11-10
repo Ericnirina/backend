@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "my_logins",
+  "info": {
+    "singularName": "my-login",
+    "pluralName": "my-logins",
+    "displayName": "Information",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Email": {
+      "type": "email"
+    }
+  }
+}

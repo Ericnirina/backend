@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_login_information",
+  "info": {
+    "displayName": "Information"
+  },
+  "options": {},
+  "attributes": {
+    "User": {
+      "type": "component",
+      "repeatable": false,
+      "component": "login.login"
+    }
+  }
+}

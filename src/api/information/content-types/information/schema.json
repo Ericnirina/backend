@@ -99,7 +99,10 @@
       "mappedBy": "information"
     },
     "numeroDossier": {
-      "type": "biginteger"
+      "type": "biginteger",
+      "min": "300",
+      "unique": true,
+      "required": true
     }
   }
 }

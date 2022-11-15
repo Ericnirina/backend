@@ -4,7 +4,8 @@
   "info": {
     "singularName": "fichier",
     "pluralName": "fichiers",
-    "displayName": "Fichier"
+    "displayName": "Fichier",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -22,6 +23,15 @@
       "relation": "manyToOne",
       "target": "api::information.information",
       "inversedBy": "fichiers"
+    },
+    "file": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
     }
   }
 }

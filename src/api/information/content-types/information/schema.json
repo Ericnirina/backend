@@ -102,7 +102,7 @@
       "type": "biginteger",
       "min": "300",
       "unique": true,
-      "required": true
+      "required": false
     }
   }
 }

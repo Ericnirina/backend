@@ -22,7 +22,7 @@
       "type": "string"
     },
     "dateProchainAudiance": {
-      "type": "date"
+      "type": "datetime"
     },
     "juridiction": {
       "type": "enumeration",

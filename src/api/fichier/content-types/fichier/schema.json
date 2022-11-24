@@ -12,12 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "nom": {
-      "type": "string"
-    },
-    "url": {
-      "type": "string"
-    },
     "information": {
       "type": "relation",
       "relation": "manyToOne",
@@ -25,12 +19,13 @@
       "inversedBy": "fichiers"
     },
     "file": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
       "allowedTypes": [
         "images",
         "files"
-      ],
-      "type": "media",
-      "multiple": true
+      ]
     }
   }
 }

@@ -57,6 +57,7 @@
         "Conseil de Discipline du Barreau",
         "Conseil de Discipline Professionnelle",
         "Inspection du Travail",
+        "Juridiction d’exception",
         "Autre"
       ]
     },
@@ -77,13 +78,16 @@
         "Proposition d’accord amiable à soumettre à l’autre partie",
         "Réponse à Proposition d’accord amiable à émettre",
         "Attente de la rédaction de la décision",
-        "Décision transmis à l’huissier pour exécution",
-        "Décision remis au client",
+        "Décision transmise à l’huissier pour exécution",
+        "Décision remise au client",
         "Déportation de l’affaire, dossier remis au client",
         "Désistement à produire",
         "Protocole transactionnelle à faire signer",
         "Attente des instructions du client",
-        "Voies de recours à introduire"
+        "Voies de recours à introduire",
+        "Attente de l’audience des plaidoiries et/ou des observations orales",
+        "Note en délibéré à produire",
+        "Demande d’enrôlement à déposer"
       ]
     },
     "user": {
